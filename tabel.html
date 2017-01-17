@@ -44,18 +44,18 @@ td {
         return array;
     }
 
-    function interChange(i){
+    function interChange(id){
 
         var temp;
-        var cell = document.getElementById(i); 
-        var left = document.getElementById(i - 1); 
-        var right = document.getElementById(i + 1);
-        var top = document.getElementById(i - 4);
-        var bottom = document.getElementById(i + 4);
+        var cell = document.getElementById(id); 
+        var left = document.getElementById(Number(id) - 1); 
+        var right = document.getElementById(Number(id) + 1);
+        var top = document.getElementById(Number(id) - 4);
+        var bottom = document.getElementById(Number(id) + 4);
 
-            //nu mere bottom si right 
+        console.log(cell, left, right, top, bottom);
 
-       /*ry {
+        try {
 
             if(left.firstChild.data == 0){
                 temp = left.firstChild.data;
@@ -63,14 +63,14 @@ td {
                 cell.firstChild.data = temp;
 
             }
-        }
+         }
 
         
         catch (err){
 
         }
 
-        */
+        
 
         try {
 
@@ -85,7 +85,7 @@ td {
         catch (err){
 
         }
-/*
+
         try {
 
             if(top.firstChild.data == 0){
@@ -113,16 +113,23 @@ td {
         catch (err){
 
         }
-*/
+
+  
+
         
     }
 
+    function puzzleGame(){       
+        
+        /*
 
-    function puzzleGame(){
-        var tbl = document.getElementById('table');
-
-       
-        // de aci in jos numa prostii in functia asta 
+        //Vlad Baiu aici ii ca tot timpu imi intra in functia de inerChange cu cell.id = 15 indiferent pe cine apas 
+        for(var i=0; i<16; i++){
+            var cell = document.getElementById(i);
+            cell.onclick = function(){ interChange(cell.id);
+            }  //probabil mere si interChange(i)
+            
+        }*/
 
         var cell0 = document.getElementById(0);
         var cell1 = document.getElementById(1);
@@ -172,8 +179,11 @@ td {
         cell14.onclick = function () { interChange(cell14.id);}
 
         cell15.onclick = function () { interChange(cell15.id);}
-           
+
+
     }
+
+
 
 	function tableCreate(){
     
@@ -188,20 +198,22 @@ td {
 
             var tr = tbl.insertRow();
 
-        for(var j = 0; j < 4; j++){
+            for(var j = 0; j < 4; j++){
 
-            var td = tr.insertCell();           
-            td.appendChild(document.createTextNode(cell_values[c]));
-            td.id = c;
-            c += 1         	    
+                var td = tr.insertCell();           
+                td.appendChild(document.createTextNode(cell_values[c]));
+                td.id = c;
+                c += 1         	    
             
+            }
         }
-    }
     body.appendChild(tbl);
-}
+    }
+
 tableCreate();
 puzzleGame();
 //interChange(3);
+
 
 
 </script>
