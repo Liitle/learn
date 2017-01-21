@@ -1,0 +1,28 @@
+
+table {
+    
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    table-layout:fixed;
+
+    
+
+}
+
+td {
+    height: 50px;
+    vertical-align: center;
+
+}
+
+.title {
+	
+	text-align: center;
+}
+
+.cell {
+	background-color: lightblue;
+	
+}
