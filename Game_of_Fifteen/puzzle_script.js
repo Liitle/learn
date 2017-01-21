@@ -14,9 +14,7 @@
             top -= 1;
 
         }
-    
-
-         
+        
         return array;
     }
 
@@ -95,5 +93,3 @@
 
 tableCreate();
 puzzleGame();
-
-
