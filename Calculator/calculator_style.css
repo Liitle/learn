@@ -1,0 +1,38 @@
+
+form {
+   
+    text-align: center;
+    
+    }
+
+input[type = button] {
+
+	width: 5%;
+    background-color: rgb(113, 198, 165);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+input[type = button]:hover{
+	background-color: rgb(124, 193, 243);
+
+}
+
+input[type = text] {
+	
+	width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+
+
+}
