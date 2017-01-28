@@ -10,11 +10,11 @@ input[type = button] {
 	width: 5%;
     background-color: rgb(113, 198, 165);
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 14px 10px;
+    margin: 3px;
     border: none;
     border-radius: 2px;
-    cursor: pointer;
+    
 
 }
 
@@ -25,9 +25,9 @@ input[type = button]:hover{
 
 input[type = text] {
 	
-	width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
+	width: 22%;
+    padding: 14px 20px;
+    margin: 20px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -35,4 +35,9 @@ input[type = text] {
     text-align: right;
 
 
+}
+
+#cbtn{
+	width: 10.6%;
+	background-color: rgb(50, 198, 230);
 }
