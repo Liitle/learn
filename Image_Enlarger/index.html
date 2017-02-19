@@ -4,30 +4,16 @@
     <meta charset="UTF-8">
     <title>Image</title>
 </head>
-
-<style>
-    img{
-        width: 120px;
-        height: 120px;
-        border: groove;
-    }
-
-    img:hover{
-        width:400px;
-        height:400px;
-        position: absolute;
-    }
-
-</style>
 <body>
 
     <div>
-        <img src = "Images/img1.jpg">
-        <img src = "Images/img2.jpg"> <br>
-        <img src = "Images/img3.jpg">
-        <img src = "Images/img4.jpg"> <br>
-        <img src = "Images/img5.jpg">
+        <img id="img1" style="width: 120px; height: 120px;" src = "Images/img1.jpg" onmouseenter="enlarge(this)" onmouseleave="reverseEnlarge(this)">
+        <img id="img2" style="width: 120px; height: 120px;" src = "Images/img2.jpg" onmouseenter="enlarge(this)" onmouseleave="reverseEnlarge(this)"> <br>
+        <img id="img3" style="width: 120px; height: 120px;" src = "Images/img3.jpg" onmouseenter="enlarge(this)" onmouseleave="reverseEnlarge(this)">
+        <img id="img4" style="width: 120px; height: 120px;" src = "Images/img4.jpg" onmouseenter="enlarge(this)" onmouseleave="reverseEnlarge(this)"><br>
+        <img id="img5" style="width: 120px; height: 120px;" src = "Images/img5.jpg" onmouseenter="enlarge(this)" onmouseleave="reverseEnlarge(this)">
     </div>
 
+<script src="image_enlarger_script.js"></script>
 </body>
 </html>
